@@ -472,11 +472,11 @@ function App() {
     };
 
     const handleNegative = () => {
-      setResult(result * -1);
+      setResult(latestResult * -1);
     };
 
     const handlePercent = () => {
-      setResult(result / 100);
+      setResult(latestResult / 100);
     };
 
     return (
