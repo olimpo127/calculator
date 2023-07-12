@@ -423,6 +423,41 @@ function App() {
     }
   };
 
+  const add0 = () => {
+    if (
+      result === 0 &&
+      sumActivation === false &&
+      minusActivation === false &&
+      multiplicationActivation === false &&
+      divisionActivation === false
+    ) {
+      setResult(0);
+    } else if (
+      result !== 0 &&
+      sumActivation === false &&
+      minusActivation === false &&
+      multiplicationActivation === false &&
+      divisionActivation === false
+    ) {
+      setResult(result * 10);
+    
+    } else if (
+      multiplicationNumber === 1 &&
+      multiplicationActivation === true
+    ) {
+      setMultiplicationNumber(0);
+    } else if (
+      multiplicationNumber !== 1 &&
+      multiplicationActivation === true
+    ) {
+      setMultiplicationNumber(multiplicationNumber * 0);
+    } else if (divisionNumber === 1 && divisionActivation === true) {
+      setDivisionNumber(0);
+    } else if (divisionNumber !== 1 && divisionActivation === true) {
+      setDivisionNumber(divisionNumber * 0);
+    }
+  };
+
     const reset = () => {
       setResult(0);
       setSumNumber(0);
@@ -514,7 +549,7 @@ function App() {
           </div>
 
           <div className="row">
-            <button className="number0">
+            <button onClick={add0} className="number0">
               0
             </button>
             <button className="coma">,</button>
