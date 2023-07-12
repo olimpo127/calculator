@@ -11,11 +11,12 @@ function App() {
   const [minusActivation, setMinusActivation] = useState(false);
 
   const [multiplicationNumber, setMultiplicationNumber] = useState(1);
-  const [multiplicationActivation, setMultiplicationActivation] =
-    useState(false);
+  const [multiplicationActivation, setMultiplicationActivation] = useState(false);
 
   const [divisionNumber, setDivisionNumber] = useState(1);
   const [divisionActivation, setDivisionActivation] = useState(false);
+
+  const latestResult = (result + sumNumber - minusNumber) * (multiplicationNumber / divisionNumber)
 
   const handleSum = () => {
     setSumActivation(true);
@@ -484,8 +485,7 @@ function App() {
           <h1>Calculator</h1>
 
           <div className="result">
-            {(result + sumNumber - minusNumber) *
-              (multiplicationNumber / divisionNumber)}
+            {latestResult}
           </div>
 
           <div className="row">
