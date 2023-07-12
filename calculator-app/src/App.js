@@ -107,7 +107,7 @@ function App() {
         </div>
 
         <div className='row'>
-          <button onClick={reset} className='reset'>AC</button>
+          <button onClick={reset} className='resetButton'>AC</button>
           <button onClick={handleNegative} className='changeSymbol'>+/-</button>
           <button onClick={handlePercent} className='percentage'>%</button>
           <button className='division'>/</button>

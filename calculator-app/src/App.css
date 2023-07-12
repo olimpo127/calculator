@@ -5,6 +5,14 @@
   margin-top: 100px;
 }
 
+.resetButton {
+  width: 15px;
+}
+
+.changeSymbol {
+  width: 10px;
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
