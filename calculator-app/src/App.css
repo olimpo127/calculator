@@ -18,7 +18,7 @@
 .result {
   border: 1px solid black;
   width: 150px;
-
+  contain: content;
   background-color: yellow;
   height: 50px;
   margin-bottom: 10px;
