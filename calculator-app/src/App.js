@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 function App() {
 
   const [result, setResult] = useState(0)
+  
 
   const add1 = () => {
     if (result === 0) {
@@ -89,6 +90,14 @@ function App() {
     setResult(0);
   }
 
+  const handleNegative = () => {
+    setResult (result * -1);
+  }
+
+  const handlePercent = () => {
+    setResult(result / 100);
+  }
+
   return (
     <div className="App">
       <div className='calculator'>
@@ -99,8 +108,8 @@ function App() {
 
         <div className='row'>
           <button onClick={reset} className='reset'>AC</button>
-          <button className='changeSymbol'>+/-</button>
-          <button className='percentage'>%</button>
+          <button onClick={handleNegative} className='changeSymbol'>+/-</button>
+          <button onClick={handlePercent} className='percentage'>%</button>
           <button className='division'>/</button>
         </div>
 
