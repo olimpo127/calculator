@@ -80,11 +80,11 @@ function App() {
       multiplicationNumber !== 1 &&
       multiplicationActivation === true
     ) {
-      setMultiplicationNumber(minusNumber * 10 + 1);
+      setMultiplicationNumber(multiplicationNumber * 1);
     } else if (divisionNumber === 1 && divisionActivation === true) {
       setDivisionNumber(1);
     } else if (divisionNumber !== 1 && divisionActivation === true) {
-      setDivisionNumber(divisionNumber * 10 + 1);
+      setDivisionNumber(divisionNumber * 1);
     }
   };
 
