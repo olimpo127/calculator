@@ -51,6 +51,12 @@ function App() {
     setResult(result / 100);
   };
 
+  const handleComa = () => {
+    if (!result.toString().includes(".")) {
+      setResult(result + ".");
+    }
+  };
+
   return (
     <div className="App">
       <div className="calculator">
@@ -122,7 +128,7 @@ function App() {
           <button onClick={() => handleNumber(0)} className="number0">
             0
           </button>
-          <button className="coma">,</button>
+          <button onClick={handleComa} className="coma">.</button>
           <button onClick={calculateResult} className="equal">
             =
           </button>

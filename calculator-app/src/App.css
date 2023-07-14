@@ -19,7 +19,7 @@
   align-items: center;
   flex-wrap: wrap;
   background-color: grey;
-  width: 160px;
+  width: 180px;
   padding: 10px;
 }
 
@@ -28,7 +28,7 @@
   width: 150px;
   contain: content;
   background-color: yellow;
-  height: 50px;
+  height: 80px;
   margin-bottom: 10px;
 }
 
