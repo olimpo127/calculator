@@ -1,8 +1,16 @@
+body {
+  background-color: green;
+}
+
 .App {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  background-color: black;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 20px;
 }
 
 .resetButton {
